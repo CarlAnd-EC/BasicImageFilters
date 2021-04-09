@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Filters</title>
+    <script src="https://kit.fontawesome.com/72f033e11e.js" crossorigin="anonymous"></script>
+    <style>
+        .spinner {
+            width: 11em;
+            height: 11em;
+            border: 0.1em solid white;
+            border-radius: 50%;
+            text-align: center;
+            visibility: hidden;
+        }
+        .fa-palette {
+            color: black;
+            font-size: 10em;
+            padding-top: 0.05em;
+            z-index: 1;
+            }
+        .fa-paint-brush {
+            color: black;
+            font-size: 5em;
+            z-index: 2;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Image filter</h1>
+        </header>
+        <section>
+            <input id="imgInput" type="file" accept="image/*">
+            <button id="process">Apply Red filter</button>
+        </section>
+        <!-- Feature in development -->
+        <!-- <section>
+            <form action="">
+                <p>Please select a basic filter:</p>
+                <input type="radio" id="red" name="color" value="red">
+                <label for="male">Red</label><br>
+                <input type="radio" id="green" name="color" value="green">
+                <label for="female">Green</label><br>
+                <input type="radio" id="blue" name="color" value="blue">
+                <label for="other">Blue</label><br>
+                <button id="process">Apply filter</button>
+            </form>
+        </section> -->
+        <!-- Feature in development -->
+        <!-- <section>
+            <label for="red">Red</label>
+            <input type="range" min="-255" max="255" value="0" id="red">
+
+            <label for="green">Green</label>
+            <input type="range" min="-255" max="255" value="0" id="green">
+
+            <label for="blue">Blue</label>
+            <input type="range" min="-255" max="255" value="0" id="blue">
+
+            <label for="brightness">Brightness</label>
+            <input type="range" min="-255" max="255" value="0" id="brightness">
+
+            <label for="contrast">Constrast</label>
+            <input type="range" min="-255" max="255" value="0" id="contrast">
+
+            <label for="grayscale">Grayscale</label>
+            <input type="checkbox" id="grayscale">
+            
+            <button id="process">Apply filter</button>
+        </section> -->
+        <section>
+            <p id="spinner" class="spinner">
+                <i class="fas fa-palette"></i>
+                <!-- <i class="fas fa-paint-brush"></i> -->
+            </p>
+            <canvas id="canvas" width="0" height="0"></canvas>
+        </section>
+        <footer>
+            <h6>Created by Carlos Andrés Escalona Contreras</h6>
+        </footer>
+    </main>
+    <script src="filter.js"></script>
+</body>
+</html>
