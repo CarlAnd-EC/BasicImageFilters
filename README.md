@@ -3,8 +3,8 @@
 Hello and welcome to my repository! 
 My name is **_Carlos Andrés Escalona Contreras_** and here you can find:​
 
-- A basic image processing application using a Web Worker.
-- [My personal page](https://carlosaec-ks.github.io/Portfolio/)
+- A [basic image processing application](https://carlosaec-ks.github.io/BasicImageFilters/) using a Web Worker.
+- [My personal page.](https://carlosaec-ks.github.io/Portfolio/)
 
 Features Version 1.0:
 
